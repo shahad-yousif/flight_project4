@@ -1,0 +1,35 @@
+<div class="first">
+<%= render 'nave'%>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @airportloc.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @airportloc.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @airportloc.longitude %>
+</p>
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@airportloc.latitude}%2C#{@airportloc.longitude}" %>
+
+<h3>Nearby locations</h3>
+<ul>
+
+<% for airportloc in @airportloc.nearbys(100) %>
+
+ <li><%= link_to airportloc.address, airportloc %> (<%= airportloc.distance.round(2) %> miles)</li>
+
+<% end %>
+
+</ul>
+
+
+<%= link_to 'Back', airportlocs_path, class:"btn btn-default" %>
+</div>

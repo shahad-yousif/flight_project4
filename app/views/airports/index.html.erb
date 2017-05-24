@@ -1,0 +1,32 @@
+<div class="first">
+   <%= render 'nave'%>
+    <p id="notice"><%= notice %></p>
+    
+    <h1>Listing Airports</h1>
+    
+    <table class="table  table-striped  table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Code</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% @airports.each do |airport| %>
+          <tr>
+            <td><%= airport.city %></td>
+            <td><%= airport.code %></td>
+            <td><%= link_to 'Show', airport, class:"btn btn-default" %></td>
+            <td><%= link_to 'Edit', edit_airport_path(airport), class:"btn btn-default" %></td>
+            <td><%= link_to 'Destroy', airport, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+    <br>
+    
+    <%= link_to 'New Airport', new_airport_path, class:"btn btn-info" %>
+

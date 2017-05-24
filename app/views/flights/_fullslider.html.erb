@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full Slider - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/assets/css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- navbar -->
+ 
+ <%= render 'nave'%>
+ <br>
+ <br>
+ 
+    
+  
+    <!-- Full Page Image Background Carousel Header -->
+    
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                
+                <div class="fill" style="background-image:url('https://media-cdn.tripadvisor.com/media/photo-o/0e/cd/51/aa/delta-air-lines.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://www.beautifullife.info/wp-content/uploads/2014/11/09/general.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://cdn1.cheapflights.com/static/images/defaultRegion.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Controls -->
+      <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+   </div>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+     
+        <div class="row">
+            <div class="col-lg-12">
+                
+              
+                                  <h1 class="title1">Start planing the perfect trip</h1>
+                   
+                   <hr>
+                
+                
+                
+                    <h2 class="title1">We love to show off our beautiful countries including a few little amazing islands. </h2>
+                    <div class="col-md-4">
+                       <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/istanbul_tr.jpg" ></a>
+               <br>
+              <h3> Turkey:Istanbul</h3>
+              <h4>Ticket price from:1000$</h4>
+              <p>Turkey rich in culture and customs and brimming with hospitality, natural beauty, and historical heritage, Turkey serves as a crossroads between Asia and Europe. The landmass known as Anatolia on which Turkey thrives has been home to numerous civilizations and their faiths and cultures, as attested by the 13 World Heritage Sites and countless religious sites you'll find here. Relive the ancient world through the ruins, customs, and traditions that are among the nation's most precious heritages. Adventure-seekers have plenty do to here, including mountain climbing, scuba diving, rafting, and skiing. A holiday to Turkey is incomplete without a cup of Turkish coffee, the pinnacle of Turkish cuisine inscribed on the Intangible Cultural Heritage List. Plan your trip to Turkey and other Turkey destinations using our handy</p>
+               </div>
+               
+               <div class="col-md-4">
+                        <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/london_gb.jpg" ></a>
+               <br>
+              <h3> United kingdom: London</h3>
+               <h4>Ticket price from:1000$</h4>
+                                   <p>One of the most visited countries in the world, England offers travellers endless possibilities when it comes to fun things to see and do. Part of the beautiful British Isles, this small but influential country is simply bursting with fascinating history, exciting cities and rich cultural traditions. Historic sites are found at every turn, from old castles dotting the picturesque countryside and colleges dating back to the Middle Ages to ancient Roman sites and centuries old royal palaces.
+
+England is also extremely easy to get around, and whether you choose to tour the country by car or public transport, you're guaranteed an unforgettable experience</p>
+               </div>
+               
+                <div class="col-md-4">
+                        <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/rome_it.jpg" ></a>
+               <br>
+               <h3>Italy: Rome</h3>
+                <h4>Ticket price from:1000$</h4>
+                <p>Italy is one of the "single greatest repositories of sensorial pleasures on Earth," according to the Lonely Planet guide. Great works of art, beautiful scenery and delicious food  have made the country a top tourist destination for centuries. The grand tour was created in the 17th century by wealthy foreigners, many from colder climes like England, who headed south to meander through Italy's villas and gardens, ruins and churches. In the 19th century, when tourism expanded to include the middle classes, Italy’s popularity increased.Rome tops the list with its ancient ruins, museums and Vatican City, spiritual center of the Roman Catholic world. Florence is noted as the birthplace of the Renaissance, while movies and books set in Tuscany have made renting a country villa there a popular vacation. Gastronomic travelers head for Bologna and Emilia-Romagna, the region that is home to Parmigiano-Reggiano cheese, balsamic vinegar and Parma hams. Milan, a modern city that is also home to historic treasures like Leonardo da Vinci's "Last Supper," is famed for its fashion and design shops. The romantic palazzos and canals of Venice sing a siren song to thousands of tourists every year</p>
+               </div>
+               
+                <div class="col-md-4">
+                        <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/madrid_es.jpg" ></a>
+               <br>
+               <h3>Spain: Madrid</h3>
+               <h4>Ticket price from:1000$</h4>
+               <p>A colorful country known for its relaxed lifestyle, vibrant nightlife, excellent food, and world-famous folklore and festivals, Spain boasts a huge number of World Heritage Sites and other spectacular places to visit. It also deserves its reputation as a beach vacation destination; the Western edge of the Mediterranean Sea is home to some of the world’s top beaches. But Spain’s geography is so much more than just soft, sandy shores. Its landscapes are as diverse as its people, ranging from lush meadows and snowy mountains to huge marshes and sprawling deserts. The countryside bursts with unspoiled villages of timeless beauty and old-world charm, as well as vast and varied nature preserves. When using our Spain trip planner, you're building your holiday based on your own interests, visitor reviews, and the informed opinions of our well-traveled writer</p>
+               </div>
+               
+                   <div class="col-md-4">
+                        <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/berlin_de.jpg" ></a>
+               <br>
+              <h3> Germany: Berlin</h3>
+              <h4>Ticket price from:1000$</h4>
+               <p>No matter whether you are interested in nature or if you prefer historical sites, Germany is a great country for mini breaks. There is a large variety of destinations all across Germany. Wherever you live in Germany, there are plenty of opportunities for day trips in your area: national parks, forests, mountains, or a stretch of coastline.
+
+As an alternative, you can explore the best cities to visit in Germany for their medieval, baroque, or contemporary heritage. There are countless castles, fortresses, churches, monasteries, and modern landmarks throughout Germany. Over 30 of them are UNESCO world heritage sites.
+
+Many Germans are also environmentally conscious. Day trips to the countryside are therefore common. National parks in Germany have an excellent infrastructure that allows you to explore these recreational areas.
+
+Most towns also have tourist offices in the city center and websites with valuable local information. Such websites are frequently available in English, and sometimes in other languages as well, to promote local sights and support the tourist industry. This makes finding the best cities to visit in Germany fairly easy</p>
+               </div>
+               
+                   <div class="col-md-4">
+                        <a href="<%= flights_path%>">
+               <img   src="https://images.kiwi.com/photos/220x165/paris_fr.jpg" ></a>
+              <h3>France: Paris</h3>
+               <h4>Ticket price from:1000$</h4>
+               
+               <br>
+              
+               <p>Paris, the city of lights, has so much to offer in terms of culture, food, and shopping that it can seem overwhelming when planing your trip to Paris. On one hand, you want to experience Paris as a local and on the other you don’t want to miss the Parisian landmarks.. Paris is also one the world capitals of fashion, culture and the arts. Millions of travelers visit Paris each year to explore the city’s many cultural attractions. They may admire Impressionist paintings at the Musee d’Orsay, attend dance performances at the Paris Opera Ballet or walk historic city streets filled with cafes that have been in business for decades</p>
+                   
+                 
+               </div>
+               
+               
+               
+           
+        </div>
+            </div>
+        <hr>
+         </div>
+         <hr> 
+         
+        <!-- Footer -->
+        <footer>
+            <div class="last">
+            <div class="row">
+                <div class="col-lg-12">
+                 
+                    <div class="col-md-4">
+                       
+                    </div>
+                   
+                     <div class="col-md-4">
+                        <p>Contact Us</p>
+                        <a href="#" class="soc2">&nbsp;  &nbsp;  &nbsp; </a>
+                        <a href="#"  class="soc3">&nbsp;  &nbsp;  &nbsp; </a>
+                        <a href="#"  class="soc4">&nbsp;  &nbsp;  &nbsp; </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                       
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- /.row -->
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+  $('.carousel').carousel();
+    </script>
+
+</body>
+
+</html>
+
