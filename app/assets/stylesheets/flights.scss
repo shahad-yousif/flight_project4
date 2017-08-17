@@ -1,0 +1,52 @@
+// Place all the styles related to the flights controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.first{
+    padding-top: 100px;
+}
+
+.hh{
+    text-decoration-color: white;
+}
+.name{
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+    color: white;
+    a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+}
+
+.name1{
+    text-shadow: 5px 5px 5px black, 0 0 30px blue, 0 0 10px white;
+     background-image: url("https://image.flaticon.com/icons/svg/430/430596.svg" );
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    background-size: 50px 50px ;
+    
+   padding-bottom: 25px;
+     padding-left: 60px;
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;} 
+}
+
+
+.pic{
+     background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTufsfuZr3AaZYUOsikQDbnZANDVt7MEWbNU3RBIXLbHp4InSI0" );
+    background-repeat: no-repeat;
+}
+
+
+
+
+.glyphicon glyphicon-plane {
+    
+   height: 1000px;
+   width: 1000px;
+}
+
+a, a:link, a:hover, a:active{
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,75 @@
+<div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+<%= form_for(@booking) do |f| %>
+  <% if @booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% @booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name, placeholder: "Shahad", class:"form-control"  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name, placeholder: "Yousif", class:"form-control"  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :gender %><br>
+    
+    <%= f.select :gender, %w{Male Female}, :prompt => 'Select', required: true, placeholder: 'Gender', class: 'form-control' %>
+  </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth, {:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }}, {:class => 'date-select'}  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :country %><br>
+    <%= f.text_field :country, placeholder: "Iraq", class:"form-control"  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number, placeholder: "111-111-1111", class:"form-control"  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, placeholder: "example@gmail.com", class:"form-control"  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :booking_type %><br>
+    <%= f.select :booking_type, %w{Economy Business First_class}, :prompt => 'Select', required: true, placeholder: 'Booking_type', class: 'form-control' %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "create Booking",  class:"btn btn-danger" %>
+  </div>
+<% end %>
+<%= link_to 'Show', @booking, class:"btn btn-default" %> 
+<%= link_to 'Back', bookings_path, class:"btn btn-default" %>
+
+</div>
+<div class="col-md-4">
+  </div>

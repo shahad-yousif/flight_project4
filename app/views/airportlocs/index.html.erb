@@ -1,0 +1,30 @@
+<div class="first">
+  <%= render 'nave'%>
+<h1>Airports</h1>
+
+<table class="table  table-striped  table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @airportlocs.each do |airportloc| %>
+      <tr>
+        <td><%= airportloc.address %></td>
+        <td><%= airportloc.latitude %></td>
+        <td><%= airportloc.longitude %></td>
+        <td><%= link_to 'Show', airportloc, class:"btn btn-info" %></td>
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+
+

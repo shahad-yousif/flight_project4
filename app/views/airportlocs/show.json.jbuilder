@@ -1,0 +1,1 @@
+json.partial! "airportlocs/airportloc", airportloc: @airportloc

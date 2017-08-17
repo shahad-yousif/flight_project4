@@ -1,0 +1,34 @@
+  <% if @flight.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@flight.errors.count, "error") %> prohibited this flight from being saved:</h2>
+
+      <ul>
+      <% @flight.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+   <div class="field">
+     <div class="form-group">
+    <%= f.label :from_airport %><br>
+    <%= f.collection_select :from_airport_id, Airport.order(:city),:id,:city  %>
+  </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :to_airport %><br>
+    <%= f.collection_select :to_airport_id, Airport.order(:city),:id,:city  %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="form-group">
+    <%= f.label :date %><br>
+    <%= f.collection_select :company_id, Company.order(:date),:id,:date  %>
+    </div>
+  </div>
+  <div class="actions" >
+    <%= f.submit %>
+  </div>
+<% end %>
